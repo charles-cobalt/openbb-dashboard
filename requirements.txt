@@ -3,5 +3,6 @@ plotly
 python-dateutil
 openbb-core
 openbb-equity
+openbb-etf
 openbb-news
 openbb-yfinance
