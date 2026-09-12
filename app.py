@@ -495,7 +495,7 @@ def key_metrics_widget(symbol: str):
             ("52-week Low", fmt_num(q.get("year_low"))),
             ("P/E (TTM)", fmt_num(m.get("pe_ratio"))),
             ("Forward P/E", fmt_num(m.get("forward_pe"))),
-            ("Dividend Yield", fmt_pct((m.get("dividend_yield") or 0) * 100, signed=False)
+            ("Dividend Yield", fmt_pct(m.get("dividend_yield") or 0, signed=False)
              if m.get("dividend_yield") is not None else "-"),
             ("Price / Book", fmt_num(m.get("price_to_book"))),
             ("Profit Margin", fmt_pct((m.get("profit_margin") or 0) * 100, signed=False)
