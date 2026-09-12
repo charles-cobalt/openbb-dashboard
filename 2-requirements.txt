@@ -1,0 +1,7 @@
+streamlit
+plotly
+python-dateutil
+openbb-core
+openbb-equity
+openbb-news
+openbb-yfinance
