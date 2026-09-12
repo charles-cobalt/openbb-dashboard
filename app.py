@@ -703,7 +703,7 @@ elif dashboard == "Screener":
                         "Name": df["name"],
                         "Price": df["price"].map(lambda v: fmt_num(v)),
                         "Chg": df["change"].map(lambda v: f"{v:+,.2f}"),
-                        "Chg %": df["percent_change"].map(lambda v: f"{float(v):+.2f}%"),
+                        "Chg %": df["percent_change"].map(lambda v: f"{float(v)*100:+.2f}%"),
                         "Volume": df["volume"].map(fmt_big),
                         "MA 50": df["ma50"].map(lambda v: fmt_num(v)),
                         "MA 200": df["ma200"].map(lambda v: fmt_num(v)),
